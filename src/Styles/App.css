@@ -16,7 +16,7 @@ header {
 
 #header-photo {    
     /* display: inline-block; */
-    width: clamp(40vh, 60vh, 70vh);
+    width: clamp(40vh, 60vh, 70vh);   
     position: absolute;
     bottom: 0;
     margin: auto;
@@ -39,51 +39,38 @@ header {
 	text-transform: uppercase;	
 }
 
-@media screen and (max-width: 1250px), (max-height: 620px) {
+@media screen and (max-width: 1250px) {
     .header-text {
-        font-size: clamp(5rem, 8rem, 10rem);
-    }
+        font-size: min(14vw, 19vw);
+       }
 }
 
-@media screen and (max-width: 732px), (max-height: 414px) {
-    #last-name {
-        display: none;
-    }
-
-    #first-name {
-        font-size: min(30vw, 10rem);
-    }
+@media screen and (max-height: 620px) {
+    .header-text {
+        font-size: min(14vh, 19vh);
+       }
 }
 
-@media screen and (max-height: 260px) {
-    #first-name {
-        font-size: min(30vh, 20vh);
-    }
-
-    #last-name {
-        display: block;
-        font-size: min(30vh, 20vh)
-    }
-
+@media screen and (max-width: 715px) {
+   .header-text {
+    font-size: min(14vw, 19vw);
+   }
 }
 
-@media screen and (max-width: 291px) {
-    #first-name {
-        font-size: min(30vh, 20vh);
-    }
+@media screen and (max-height: 414px) {
+    .header-text {
+        font-size: min(10vh, 15vh);
+       }
 }
 
-
-
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 550px) {
     #header-photo {
-        width: 80vw;
+        width: 90vw;
     }
 }
 
-
-@media screen and (max-width: 270px) {
-    #first-name {
-        font-size: min(15vh, 17vh);
+@media screen and (max-height: 671px) {
+    #header-photo {
+        width: 50vh;
     }
 }
