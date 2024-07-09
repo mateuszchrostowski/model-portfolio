@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Hind Siliguri';
+    color: aliceblue;
+    background-color: black;
+}
+
+header {    
+    position: relative;
+    text-align: center;
+    background: linear-gradient(112.1deg, rgb(17, 20, 31) 11.4%, rgb(62, 65, 73) 70.2%);
+    height: 100vh;
+}
+
+#header-photo {    
+    /* display: inline-block; */
+    width: clamp(40vh, 60vh, 70vh);
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.header-text {    
+    margin: 0;
+    word-wrap: break-word;
+    font-size: 12vw;   
+    font-weight: 900;
+    /* background-image: url(https://qtxasset.com/cdn-cgi/image/w=850,h=478,f=auto,fit=crop,g=0.5x0.5/https://qtxasset.com/quartz/qcloud4/media/image/sensorsmag/1545150337/MARKET_1.gif?VersionId=.xGU2OlcYhmaN.Y4GVgIPSlQo53iBs.E); */
+    /* background-image: url(https://cdn.shopify.com/s/files/1/0066/0927/2914/files/smoke_3.gif?v=1637694197); */
+    background-image: url(https://cdn.shopify.com/s/files/1/0066/0927/2914/files/smoke_4.gif?v=1637694197);
+	background-size: cover;
+	color: transparent;
+    -moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;	
+}
+
+@media screen and (max-width: 1250px), (max-height: 620px) {
+    .header-text {
+        font-size: clamp(5rem, 8rem, 10rem);
+    }
+}
+
+@media screen and (max-width: 732px), (max-height: 414px) {
+    #last-name {
+        display: none;
+    }
+
+    #first-name {
+        font-size: min(30vw, 10rem);
+    }
+}
+
+@media screen and (max-height: 260px) {
+    #first-name {
+        font-size: min(30vh, 20vh);
+    }
+
+    #last-name {
+        display: block;
+        font-size: min(30vh, 20vh)
+    }
+
+}
+
+@media screen and (max-width: 291px) {
+    #first-name {
+        font-size: min(30vh, 20vh);
+    }
+}
+
+
+
+@media screen and (max-width: 460px) {
+    #header-photo {
+        width: 80vw;
+    }
+}
+
+
+@media screen and (max-width: 270px) {
+    #first-name {
+        font-size: min(15vh, 17vh);
+    }
+}
